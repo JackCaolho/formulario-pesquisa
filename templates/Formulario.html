@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dinâmico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h1>Formulário de Pesquisa</h1>
+            <div class="form-group">
+                <label for="nomeEmpresa">Nome da Empresa:</label>
+                <input type="text" id="nomeEmpresa" name="nomeEmpresa" placeholder="Digite o nome da empresa" required>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoPesquisa">Tipo de Pesquisa:</label>
+                <select id="tipoPesquisa" name="tipoPesquisa" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="NPS/CSAT">NPS/CSAT</option>
+                    <option value="CES">CES</option>
+                </select>
+            </div>
+            <div id="perguntas" class="perguntas-container"></div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
